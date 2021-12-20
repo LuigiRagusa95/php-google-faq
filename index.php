@@ -58,9 +58,9 @@
                 <h2><?php echo ($data['question']) ?></h2>
                 <?php $paragraphs = explode('\n', $data['answer']) ?>
 
-                <?php foreach ($paragraphs as $data) :
-                    if (!empty($data)) : ?>
-                        <p><?php echo $data;  ?></p>
+                <?php foreach ($paragraphs as $paragraph) :
+                    if (!empty($paragraph)) : ?>
+                        <p><?php echo $paragraph;  ?></p>
 
                     <?php endif ?>
                 <?php endforeach ?>
