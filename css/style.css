@@ -140,13 +140,13 @@ header section .list > ul > li > a {
 }
 
 /* Main */
-.container {
+main .container {
 	padding: 2rem;
 	margin: 0 auto;
 	max-width: 980px;
 }
 
-.container h2 {
+main .container h2 {
 	display: flex;
 	color: #3c4043;
 	font-weight: 500;
@@ -155,10 +155,62 @@ header section .list > ul > li > a {
 	padding: 4rem 0 0 0;
 }
 
-.container p {
+main .container p {
 	color: #5f6368;
 	margin: 0.75rem 0;
 	font-size: 0.875rem;
 	line-height: 1.5rem;
 	padding-top: 1.25rem;
+}
+
+/* Footer */
+footer {
+	padding: 0.5rem 0;
+	background-color: #f5f5f5;
+	border-top: 1px solid #eeeeee;
+}
+footer .container {
+	width: 100%;
+	display: flex;
+	margin: 0 auto;
+	padding: 0 2rem;
+	max-width: 980px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer .container > ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+footer .container > ul > li {
+	font-size: 0.625rem;
+	line-height: 1.5rem;
+	padding-right: 0.5rem;
+	color: rgba(30, 30, 30, 0.6);
+}
+
+footer .container > .language {
+	display: flex;
+	align-items: center;
+}
+
+footer .container > .language > .icon {
+	display: flex;
+	align-items: center;
+	margin-right: 0.5rem;
+	justify-content: center;
+}
+
+footer .container > .language > .icon > .material-icons {
+	color: #30a2f7;
+	font-size: 1rem;
+}
+
+footer .container > .language > select {
+	display: flex;
+	min-width: 144px;
+	align-items: center;
 }
