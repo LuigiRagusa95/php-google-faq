@@ -1,3 +1,5 @@
+<?php include './data.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +52,21 @@
             </div>
         </section>
     </header>
-    <main></main>
+    <main>
+        <div class="container">
+            <?php foreach ($database as $data) : ?>
+                <h2><?php echo ($data['question']) ?></h2>
+                <?php $paragraphs = explode('\n', $data['answer']) ?>
+
+                <?php foreach ($paragraphs as $data) :
+                    if (!empty($data)) : ?>
+                        <p><?php echo $data;  ?></p>
+
+                    <?php endif ?>
+                <?php endforeach ?>
+            <?php endforeach ?>
+        </div>
+    </main>
     <footer></footer>
 </body>
 

@@ -138,3 +138,27 @@ header section .list > ul > li > a {
 	letter-spacing: 0.02rem;
 	padding: 0 0 0.25rem 0;
 }
+
+/* Main */
+.container {
+	padding: 2rem;
+	margin: 0 auto;
+	max-width: 980px;
+}
+
+.container h2 {
+	display: flex;
+	color: #3c4043;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	padding: 4rem 0 0 0;
+}
+
+.container p {
+	color: #5f6368;
+	margin: 0.75rem 0;
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+	padding-top: 1.25rem;
+}
