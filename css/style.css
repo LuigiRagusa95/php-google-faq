@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+}
+
+a {
+	display: flex;
+	color: inherit;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+}
+
+header > section:first-of-type {
+	z-index: 1;
+}
+header > section:last-of-type {
+	z-index: 10;
+}
+
+header section {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background-color: #ffffff;
+	justify-content: space-between;
+}
+
+header section .logo {
+	display: flex;
+	padding: 1rem;
+	align-items: center;
+}
+
+header section .logo > .logo-image {
+	display: flex;
+	align-items: center;
+}
+
+header section .logo > .logo-text {
+	top: -1.5px;
+	color: #5f6368;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	position: relative;
+	margin-left: 0.5rem;
+}
+
+header section .buttons {
+	display: flex;
+	padding: 1rem;
+	align-items: center;
+}
+
+header section .buttons > .button-icon {
+	display: flex;
+	flex-shrink: 0;
+	padding: 0.5rem;
+	color: #5f6368;
+	align-items: center;
+	margin-right: 0.5rem;
+	justify-content: center;
+}
+
+header section .buttons > .button {
+	display: flex;
+	flex-shrink: 0;
+	min-width: 96px;
+	color: #ffffff;
+	cursor: pointer;
+	line-height: 1rem;
+	padding: 0.5rem 1rem;
+	font-size: 0.875rem;
+	align-items: center;
+	letter-spacing: 0.01rem;
+	border-radius: 0.25rem;
+	justify-content: center;
+	background-color: #1a73e8;
+	border: 1px solid transparent;
+	font-family: "Roboto", sans-serif;
+}
+
+header section .list {
+	width: 100%;
+	z-index: 10;
+	display: flex;
+	padding: 0 1rem;
+	margin-top: -1rem;
+	position: relative;
+	align-items: center;
+	line-height: 1.5rem;
+}
+
+header section .list > ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+header section .list > ul > li {
+	display: flex;
+	font-weight: 500;
+	font-size: 0.875rem;
+	margin-right: 2rem;
+}
+
+header section .list > ul > li > a {
+	display: flex;
+	color: #5f6368;
+	line-height: 2rem;
+	letter-spacing: 0.02rem;
+	padding: 0 0 0.25rem 0;
+}
